@@ -4,329 +4,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Profile | Agung Mantra</title>
 </head>
 
 <body>
     <header id="header">
-
         <div class="logo">
-            <a href="home.html">
-                Agung Mantra
-            </a>
+            <a href="home.html">Agung Mantra</a>
         </div>
-
         <nav aria-label="Navigasi utama">
             <ul>
-                <li>
-                    <a href="home.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="profile.html">Tentang Saya</a>
-                </li>
-
-                <li>
-                    <a href="skills.html">Skill & Minat</a>
-                </li>
-
-                <li>
-                    <a href="projects.html">Project</a>
-                </li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Tentang Saya</a></li>
+                <li><a href="skills.html">Skill & Minat</a></li>
+                <li><a href="projects.html">Project</a></li>
             </ul>
         </nav>
-
     </header>
 
-
-    <main>
-        <section id="about" class="about">
-
-            <header class="section-header">
-
-                <h2>
-                    Perkenalkan Saya
-                </h2>
-
-                <h1>
-                    I Gusti Ngurah Agung Mantra Suyasa
-                </h1>
-
-                <p>
-                    Saya adalah mahasiswa S1 Teknologi Informasi
-                    Universitas Udayana yang memiliki ketertarikan
-                    pada pemrograman, pengembangan aplikasi,
-                    dan UI/UX Design.
+    <main style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
+        
+        <section id="about" class="about" style="margin-bottom: 3rem;">
+            <header class="section-header" style="margin-bottom: 2rem; text-align: center;">
+                <h2>Perkenalkan Saya</h2>
+                <h1 style="font-size: 2rem; margin: 0.5rem 0; color: #333;">I Gusti Ngurah Agung Mantra Suyasa</h1>
+                <p style="color: #555; max-width: 600px; margin: 0 auto;">
+                    Saya adalah mahasiswa S1 Teknologi Informasi Universitas Udayana yang memiliki ketertarikan pada pemrograman, pengembangan aplikasi, dan UI/UX Design.
                 </p>
-
             </header>
 
-            <div class="profile">
-
-                <figure class="profile-image">
-
-                    <img
-                        src="asset/fotoProfile.jpg"
-                        alt="Foto profil I Gusti Ngurah Agung Mantra Suyasa"
-                    >
-
+            <div class="profile" style="background-color: #fafafa; border: 1px solid #ddd; border-radius: 8px; padding: 2rem; display: flex; flex-direction: column; gap: 1.5rem;">
+                <figure class="profile-image" style="margin: 0; text-align: center;">
+                    <img src="asset/fotoProfile.jpg" alt="Foto profil I Gusti Ngurah Agung Mantra Suyasa" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #ddd;">
                 </figure>
 
-
                 <article class="profile-description">
-
-                    <h3>
-                        Tentang Saya
-                    </h3>
-
-                    <p>
-                        Ketertarikan saya terhadap teknologi dimulai sejak
-                        menempuh pendidikan SMK dengan mengambil jurusan
-                        Rekayasa Perangkat Lunak (RPL).
+                    <h3 style="margin-top: 0; color: #333;">Tentang Saya</h3>
+                    <p style="color: #555; line-height: 1.6;">
+                        Ketertarikan saya terhadap teknologi dimulai sejak menempuh pendidikan SMK dengan mengambil jurusan Rekayasa Perangkat Lunak (RPL).
                     </p>
-
-                    <p>
-                        Dari sana saya mulai mempelajari pemrograman,
-                        pengembangan website, database, dan berbagai dasar
-                        pengembangan perangkat lunak.
+                    <p style="color: #555; line-height: 1.6;">
+                        Dari sana saya mulai mempelajari pemrograman, pengembangan website, database, dan berbagai dasar pengembangan perangkat lunak.
                     </p>
-
-                    <p>
-                        Setelah lulus SMK, saya melanjutkan pendidikan di
-                        Universitas Udayana pada program studi S1 Teknologi
-                        Informasi untuk memperdalam ilmu dan kemampuan yang
-                        telah saya dapatkan sebelumnya.
+                    <p style="color: #555; line-height: 1.6;">
+                        Setelah lulus SMK, saya melanjutkan pendidikan di Universitas Udayana pada program studi S1 Teknologi Informasi untuk memperdalam ilmu dan kemampuan yang telah saya dapatkan sebelumnya.
                     </p>
-
-                    <p>
-                        Selama menjadi mahasiswa, saya juga aktif mengikuti
-                        berbagai lomba dan organisasi untuk mengembangkan
-                        kemampuan teknis maupun soft skill.
+                    <p style="color: #555; line-height: 1.6;">
+                        Selama menjadi mahasiswa, saya juga aktif mengikuti berbagai lomba dan organisasi untuk mengembangkan kemampuan teknis maupun soft skill.
                     </p>
-
                 </article>
-
             </div>
 
-
-            <!-- Informasi Singkat -->
-            <div class="personal-information">
-
-                <article class="personal-item">
-
-                    <h3>
-                        Hobi
-                    </h3>
-
-                    <p>
-                        Berlari, membaca buku, dan mengikuti
-                        perkembangan teknologi.
-                    </p>
-
+            <!-- Hobi dalam bentuk Card/Tag -->
+            <div class="personal-information" style="margin-top: 2rem;">
+                <article class="personal-item" style="background-color: #fafafa; border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem;">
+                    <h3 style="margin-top: 0; color: #333;">Hobi & Minat</h3>
+                    <ul style="margin: 0; padding-left: 1.2rem; color: #555; line-height: 1.8;">
+                        <li><strong>Berlari:</strong> Menjaga kebugaran fisik dan stamina.</li>
+                        <li><strong>Membaca Buku:</strong> Memperluas wawasan dan pengetahuan.</li>
+                        <li><strong>Teknologi:</strong> Selalu mengikuti perkembangan tren teknologi, terutama di bidang pengembangan aplikasi dan desain antarmuka.</li>
+                    </ul>
                 </article>
-
             </div>
-
         </section>
 
-        <section id="education" class="education">
-
-            <header class="section-header">
-
-                <h2>
-                    Riwayat Pendidikan
-                </h2>
-
+        <section id="education" class="education" style="margin-bottom: 3rem;">
+            <header class="section-header" style="margin-bottom: 1.5rem; border-bottom: 2px solid #eee; padding-bottom: 0.5rem;">
+                <h2>Riwayat Pendidikan</h2>
             </header>
 
-
-            <div class="education-list">
-
-                <article class="education-item">
-
-                    <p>
-                        2023 - 2025
-                    </p>
-
-                    <h3>
-                        SMK Negeri 1 Denpasar
-                    </h3>
-
-                    <p>
-                        Rekayasa Perangkat Lunak (RPL)
-                    </p>
-
-                    <p>
-                        Mempelajari dasar pemrograman, database,
-                        pengembangan website, dan pengembangan
-                        perangkat lunak.
-                    </p>
-
-                </article>
-
-
-                <article class="education-item">
-
-                    <p>
-                        2025 - Sekarang
-                    </p>
-
-                    <h3>
-                        Universitas Udayana
-                    </h3>
-
-                    <p>
-                        S1 Teknologi Informasi
-                    </p>
-
-                    <p>
-                        Melanjutkan dan memperdalam ilmu teknologi
-                        yang telah dipelajari sejak SMK.
-                    </p>
-
-                </article>
-
-            </div>
-
+            <table border="1" cellpadding="12" cellspacing="0" style="width: 100%; text-align: left; border-collapse: collapse; border-color: #ddd;">
+                <tr style="background-color: #f2f2f2;">
+                    <th style="width: 25%; color: #333;">Tahun</th>
+                    <th style="width: 30%; color: #333;">Institusi</th>
+                    <th style="width: 45%; color: #333;">Jurusan & Deskripsi</th>
+                </tr>
+                <tr>
+                    <td style="color: #555;">2023 - 2025</td>
+                    <td style="color: #333;"><strong>SMK Negeri 1 Denpasar</strong></td>
+                    <td style="color: #555;">
+                        <strong>Rekayasa Perangkat Lunak (RPL)</strong><br>
+                        Mempelajari dasar pemrograman, database, pengembangan website, dan pengembangan perangkat lunak.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: #555;">2025 - Sekarang</td>
+                    <td style="color: #333;"><strong>Universitas Udayana</strong></td>
+                    <td style="color: #555;">
+                        <strong>S1 Teknologi Informasi</strong><br>
+                        Melanjutkan dan memperdalam ilmu teknologi yang telah dipelajari sejak SMK.
+                    </td>
+                </tr>
+            </table>
         </section>
 
-        <section id="activities" class="activities">
-
-            <header class="section-header">
-
-                <h2>
-                    Lomba & Organisasi
-                </h2>
-
-                <p>
-                    Beberapa kegiatan yang pernah saya ikuti
-                    selama menempuh pendidikan.
-                </p>
-
+        <section id="activities" class="activities" style="margin-bottom: 3rem;">
+            <header class="section-header" style="margin-bottom: 1.5rem; border-bottom: 2px solid #eee; padding-bottom: 0.5rem;">
+                <h2>Lomba & Organisasi</h2>
+                <p style="color: #555; font-size: 0.95rem; margin-top: 0.3rem;">Beberapa kegiatan yang pernah saya ikuti selama menempuh pendidikan.</p>
             </header>
 
-
-            <div class="activity-list">
-
-                <article class="activity-item">
-
-                    <h3>
-                        Lomba / Kompetisi
-                    </h3>
-
-                    <p>
-                        PINGFEST 2025
-                    </p>
-
-                    <p>
-                        Juara 3
-                    </p>
-
-                    <p>
-                        Pada lomba ini, saya berpartisipasi dalam pengembangan
-                        aplikasi berbasis mobile yang menekankan pada UI/UX Design.
-                    </p>
-
-                </article>
-
-                <article class="activity-item">
-
-                    <h3>
-                        Organisasi
-                    </h3>
-
-                    <p>
-                        Technology Artisan
-                    </p>
-
-                    <p>
-                        2026 | Anggota Divisi UI/UX Design
-                    </p>
-
-                    <p>
-                        Pada organisasi ini, saya terlibat dalam pengembangan desain antarmuka
-                        dan pengalaman pengguna untuk berbagai proyek internal. Selain itu saya juga berkontribusi dalam 
-                        berbagai workshop yang pernah diselenggarakan TecArt.
-                    </p>
-
-                </article>
-
-            </div>
-
+            <table border="1" cellpadding="12" cellspacing="0" style="width: 100%; text-align: left; border-collapse: collapse; border-color: #ddd;">
+                <tr style="background-color: #f2f2f2;">
+                    <th style="width: 15%; color: #333;">Kategori</th>
+                    <th style="width: 25%; color: #333;">Nama Kegiatan</th>
+                    <th style="width: 25%; color: #333;">Peran / Pencapaian</th>
+                    <th style="width: 35%; color: #333;">Deskripsi</th>
+                </tr>
+                <tr>
+                    <td style="color: #555;">Lomba</td>
+                    <td style="color: #333;"><strong>PINGFEST 2025</strong></td>
+                    <td style="color: #555;">Juara 3</td>
+                    <td style="color: #555;">Berpartisipasi dalam pengembangan aplikasi berbasis mobile yang menekankan pada UI/UX Design.</td>
+                </tr>
+                <tr>
+                    <td style="color: #555;">Organisasi</td>
+                    <td style="color: #333;"><strong>Technology Artisan</strong></td>
+                    <td style="color: #555;">Anggota Divisi UI/UX Design (2026)</td>
+                    <td style="color: #555;">Terlibat dalam pengembangan desain antarmuka dan pengalaman pengguna, serta berkontribusi dalam workshop.</td>
+                </tr>
+            </table>
         </section>
 
-        <section id="journey" class="journey">
-
-            <header class="section-header">
-
-                <h2>
-                    Perjalanan Saya
-                </h2>
-
+        <section id="journey" class="journey" style="margin-bottom: 2rem;">
+            <header class="section-header" style="margin-bottom: 1.5rem; border-bottom: 2px solid #eee; padding-bottom: 0.5rem;">
+                <h2>Perjalanan Saya</h2>
             </header>
 
+            <div class="journey-timeline" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+                <div style="padding: 1.2rem; border: 1px solid #ddd; background-color: #fafafa; border-radius: 8px;">
+                    <h3 style="margin: 0 0 0.5rem 0; color: #333; font-size: 1.1rem;">1. SMK - RPL</h3>
+                    <p style="margin: 0; color: #555; font-size: 0.95rem;">Memulai perjalanan di dunia pemrograman dan pengembangan perangkat lunak.</p>
+                </div>
 
-            <ol class="journey-list">
+                <div style="padding: 1.2rem; border: 1px solid #ddd; background-color: #fafafa; border-radius: 8px;">
+                    <h3 style="margin: 0 0 0.5rem 0; color: #333; font-size: 1.1rem;">2. Universitas Udayana</h3>
+                    <p style="margin: 0; color: #555; font-size: 0.95rem;">Melanjutkan pendidikan S1 Teknologi Informasi untuk memperdalam ilmu teknologi.</p>
+                </div>
 
-                <li>
-                    <strong>
-                        SMK - RPL
-                    </strong>
+                <div style="padding: 1.2rem; border: 1px solid #ddd; background-color: #fafafa; border-radius: 8px;">
+                    <h3 style="margin: 0 0 0.5rem 0; color: #333; font-size: 1.1rem;">3. Lomba & Organisasi</h3>
+                    <p style="margin: 0; color: #555; font-size: 0.95rem;">Mengembangkan kemampuan melalui berbagai kompetisi dan kegiatan organisasi.</p>
+                </div>
 
-                    <span>
-                        Memulai perjalanan di dunia pemrograman
-                        dan pengembangan perangkat lunak.
-                    </span>
-                </li>
-
-                <li>
-                    <strong>
-                        Universitas Udayana
-                    </strong>
-
-                    <span>
-                        Melanjutkan pendidikan S1 Teknologi Informasi
-                        untuk memperdalam ilmu teknologi.
-                    </span>
-                </li>
-
-                <li>
-                    <strong>
-                        Lomba & Organisasi
-                    </strong>
-
-                    <span>
-                        Mengembangkan kemampuan melalui berbagai
-                        kompetisi dan kegiatan organisasi.
-                    </span>
-                </li>
-
-                <li>
-                    <strong>
-                        Saat Ini
-                    </strong>
-
-                    <span>
-                        Terus mengembangkan kemampuan dalam
-                        pemrograman dan UI/UX Design.
-                    </span>
-                </li>
-
-            </ol>
-
+                <div style="padding: 1.2rem; border: 1px solid #ddd; background-color: #fafafa; border-radius: 8px;">
+                    <h3 style="margin: 0 0 0.5rem 0; color: #333; font-size: 1.1rem;">4. Saat Ini</h3>
+                    <p style="margin: 0; color: #555; font-size: 0.95rem;">Terus mengembangkan kemampuan dalam pemrograman dan UI/UX Design.</p>
+                </div>
+            </div>
         </section>
 
     </main>
 
-    <footer id="footer">
-
-        <p>
-            &copy; 2026 Agung Mantra. All rights reserved.
-        </p>
-
+    <footer id="footer" style="text-align: center; padding: 2rem 0; border-top: 1px solid #ddd; margin-top: 2rem;">
+        <p>&copy; 2026 Agung Mantra. All rights reserved.</p>
     </footer>
-
 </body>
 
 </html>
