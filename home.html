@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website portofolio pribadi yang berisi informasi diri, skill, minat, pengalaman, dan project.">
     <title>Portfolio Agung Mantra</title>
+    <link rel="stylesheet" href="style.css">
 </head> 
 
 <body>
@@ -16,7 +17,7 @@
         </div>
         <nav aria-label="Navigasi utama">
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="home.html" class="active">Home</a></li>
                 <li><a href="profile.html">Tentang Saya</a></li>
                 <li><a href="skills.html">Skill & Minat</a></li>
                 <li><a href="projects.html">Project</a></li>
@@ -25,77 +26,84 @@
     </header>
 
     <main>
-        <section id="home" class="hero" style="max-width: 900px; margin: 0 auto; padding: 4rem 1rem; text-align: center;">
+        <section id="home" class="hero">
             <div class="hero-content">
-                <p class="hero-subtitle" style="color: #666; font-size: 1.1rem; margin-bottom: 0.5rem;">
+                <p class="hero-subtitle">
                     Halo, saya I Gusti Ngurah Agung Mantra Suyasa. Selamat datang di portofolio saya!
                 </p>
-                <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: #333;">
+                <h1>
                     I Gusti Ngurah Agung Mantra Suyasa
                 </h1>
-                <p class="hero-description" style="color: #555; font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem auto; line-height: 1.6;">
+                <p class="hero-description">
                     Saya adalah seorang pengembang perangkat lunak dengan minat dalam menciptakan solusi teknologi yang inovatif dan efisien.
                 </p>
-                <div class="hero-actions" style="display: flex; justify-content: center; gap: 1rem;">
-                    <a href="profile.html" style="padding: 0.75rem 1.5rem; background-color: #333; color: #fff; text-decoration: none; border-radius: 4px; font-weight: 500;">
+                <div class="hero-actions">
+                    <a href="profile.html" class="btn btn-primary">
                         Tentang Saya
                     </a>
-                    <a href="projects.html" style="padding: 0.75rem 1.5rem; background-color: #fff; color: #333; border: 1px solid #333; text-decoration: none; border-radius: 4px; font-weight: 500;">
+                    <a href="projects.html" class="btn btn-secondary">
                         Lihat Project
                     </a>
                 </div>
             </div>
+            <div class="hero-graphic" aria-hidden="true">
+                <span class="ring ring-1"></span>
+                <span class="ring ring-2"></span>
+                <span class="ring-dot"></span>
+            </div>
         </section>
 
-        <section id="contact" class="contact" style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem 4rem 1rem;">
-            <header class="section-header" style="margin-bottom: 2rem; border-bottom: 2px solid #eee; padding-bottom: 0.5rem; text-align: center;">
+        <section id="contact" class="contact">
+            <header class="section-header">
                 <h2>Mari Terhubung</h2>
             </header>
-            
-            <div class="contact-information" style="text-align: center; margin-bottom: 2rem;">
-                <p style="margin: 0.5rem 0;">Email: <a href="mailto:agung.mantra07@gmail.com" style="color: #0066cc;">agung.mantra07@gmail.com</a></p>
-                <p style="margin: 0.5rem 0;">GitHub: <a href="https://github.com/agungmantra" target="_blank" rel="noopener noreferrer" style="color: #0066cc;">Profil GitHub</a></p>
-            </div>
 
-            <!-- Formulir Kontak dengan Gaya Card -->
-            <div class="contact-form" style="background-color: #fafafa; border: 1px solid #ddd; border-radius: 8px; padding: 2rem; max-width: 600px; margin: 0 auto;">
-                <form action="#" method="POST">
-                    <div style="margin-bottom: 1.2rem;">
-                        <label for="nama" style="display: block; margin-bottom: 0.3rem; font-weight: 500;">Nama Lengkap:</label>
-                        <input type="text" id="nama" name="nama" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
-                    </div>
-                    
-                    <div style="margin-bottom: 1.2rem;">
-                        <label for="email" style="display: block; margin-bottom: 0.3rem; font-weight: 500;">Alamat Email:</label>
-                        <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
-                    </div>
-                    
-                    <div style="margin-bottom: 1.2rem;">
-                        <label for="telepon" style="display: block; margin-bottom: 0.3rem; font-weight: 500;">No. Telepon / WhatsApp:</label>
-                        <input type="tel" id="telepon" name="telepon" placeholder="Contoh: 08123456789" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
-                    </div>
-                    
-                    <div style="margin-bottom: 1.2rem;">
-                        <label for="alamat" style="display: block; margin-bottom: 0.3rem; font-weight: 500;">Alamat Domisili:</label>
-                        <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat lengkap Anda" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;"></textarea>
-                    </div>
+            <div class="contact-grid">
+                <div class="contact-information">
+                    <p>Email: <a href="mailto:agung.mantra07@gmail.com">agung.mantra07@gmail.com</a></p>
+                    <p>GitHub: <a href="https://github.com/agungmantra" target="_blank" rel="noopener noreferrer">Profil GitHub</a></p>
+                </div>
 
-                    <div style="margin-bottom: 1.2rem;">
-                        <label for="pesan" style="display: block; margin-bottom: 0.3rem; font-weight: 500;">Pesan:</label>
-                        <textarea id="pesan" name="pesan" rows="4" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;"></textarea>
-                    </div>
-                    
-                    <div>
-                        <button type="submit" style="background-color: #333; color: #fff; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; cursor: pointer; font-weight: 500; width: 100%;">
-                            Kirim Pesan
-                        </button>
-                    </div>
-                </form>
+                <!-- Formulir Kontak dengan Gaya Card -->
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="field">
+                            <label for="nama">Nama Lengkap:</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Alamat Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="telepon">No. Telepon / WhatsApp:</label>
+                            <input type="tel" id="telepon" name="telepon" placeholder="Contoh: 08123456789" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="alamat">Alamat Domisili:</label>
+                            <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat lengkap Anda" required></textarea>
+                        </div>
+
+                        <div class="field">
+                            <label for="pesan">Pesan:</label>
+                            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-primary">
+                                Kirim Pesan
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer id="footer" style="text-align: center; padding: 2rem 0; border-top: 1px solid #ddd; margin-top: 2rem;">
+    <footer id="footer">
         <p>&copy; 2026 Agung Mantra. All rights reserved.</p>
     </footer>
 
