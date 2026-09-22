@@ -1,0 +1,654 @@
+/* ==========================================================================
+   PORTFOLIO — DARK FUTURISTIC THEME
+   Tempel seluruh isi file ini ke dalam tag <style>...</style>
+   di bagian <head> pada home.html, profile.html, skills.html, projects.html
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ---------- Reset & Base ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+}
+
+h1 { font-size: clamp(2rem, 6vw, 3.2rem); }
+h2 { font-size: clamp(1.5rem, 4vw, 2.1rem); }
+h3 { font-size: 1.15rem; }
+
+p {
+    color: #A0A0A0;
+    font-size: 0.98rem;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+*, *::before, *::after {
+    transition: all 0.3s ease;
+}
+
+/* ---------- Layout container ---------- */
+main {
+    padding-top: 90px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+main > section {
+    padding: 60px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+main > section:last-child {
+    border-bottom: none;
+}
+
+.section-header {
+    margin-bottom: 40px;
+}
+
+.section-header h2,
+main > section > .section-header h1 {
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    max-width: 560px;
+}
+
+/* ---------- Header / Navbar ---------- */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    z-index: 1000;
+}
+
+#header .logo a {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+}
+
+#header .logo a:hover {
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+#header nav ul {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+#header nav ul li a {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    color: #A0A0A0;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+#header nav ul li a:hover {
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.25);
+}
+
+/* ---------- Hero (home.html) ---------- */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 40px 0 !important;
+    border-bottom: none !important;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-subtitle {
+    color: #A0A0A0;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.78rem;
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    margin-bottom: 18px;
+}
+
+.hero-description {
+    max-width: 520px;
+    margin-bottom: 32px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.hero-actions a {
+    padding: 12px 26px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.hero-actions a:first-child {
+    background: #FFFFFF;
+    color: #0A0A0A;
+}
+
+.hero-actions a:first-child:hover {
+    box-shadow: 0 0 22px rgba(255, 255, 255, 0.55);
+    transform: translateY(-2px);
+}
+
+.hero-actions a:last-child {
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.hero-actions a:last-child:hover {
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 0 18px rgba(160, 160, 160, 0.4);
+    transform: translateY(-2px);
+}
+
+/* ---------- Contact (home.html) ---------- */
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-information a {
+    color: #A0A0A0;
+    border-bottom: 1px solid transparent;
+}
+
+.contact-information a:hover {
+    color: #FFFFFF;
+    border-bottom-color: rgba(255, 255, 255, 0.4);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* ---------- About / Profile (profile.html) ---------- */
+.about .profile {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 32px;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
+}
+
+.profile-description h3 {
+    margin-bottom: 12px;
+}
+
+.profile-description p {
+    margin-bottom: 12px;
+}
+
+.personal-information {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.personal-item {
+    background: #111111;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.personal-item h3 {
+    margin-bottom: 8px;
+}
+
+.personal-item:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ---------- Education (profile.html) ---------- */
+.education-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.education-item {
+    background: #111111;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 24px;
+}
+
+.education-item p:first-child {
+    color: #A0A0A0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+}
+
+.education-item h3 {
+    margin-bottom: 8px;
+}
+
+.education-item p {
+    margin-bottom: 6px;
+}
+
+.education-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 24px rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ---------- Activities (profile.html) ---------- */
+.activity-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.activity-item {
+    background: #111111;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 24px;
+}
+
+.activity-item h3 {
+    color: #A0A0A0;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+}
+
+.activity-item p:nth-of-type(1) {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.05rem;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.activity-item p:nth-of-type(2) {
+    color: #FFFFFF;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.activity-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 24px rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ---------- Journey timeline (profile.html) ---------- */
+.journey-list {
+    position: relative;
+    padding-left: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.journey-list::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    bottom: 6px;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.journey-list li {
+    position: relative;
+}
+
+.journey-list li::before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.journey-list strong {
+    display: block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.journey-list span {
+    color: #A0A0A0;
+    font-size: 0.9rem;
+}
+
+/* ---------- Skills (skills.html) ---------- */
+.skill-category {
+    margin-bottom: 44px;
+}
+
+.skill-category > header {
+    margin-bottom: 22px;
+}
+
+.skill-category > header h2 {
+    margin-bottom: 6px;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.skill-item {
+    background: #111111;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.skill-item h3 {
+    margin-bottom: 8px;
+}
+
+.skill-item p {
+    margin-bottom: 12px;
+}
+
+.skill-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 22px rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.skill-level {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.skill-level span:first-child {
+    color: #A0A0A0;
+    font-size: 0.78rem;
+}
+
+.skill-level span:last-child {
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #FFFFFF;
+}
+
+/* Interests tags */
+.interests ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.interests ul li {
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: #111111;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.85rem;
+    color: #A0A0A0;
+}
+
+.interests ul li:hover {
+    color: #FFFFFF;
+    box-shadow: 0 0 14px rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ---------- Projects (projects.html) ---------- */
+.project-category {
+    margin-bottom: 40px;
+}
+
+.category-header {
+    margin-bottom: 24px;
+}
+
+.category-header h2 {
+    margin-bottom: 6px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.project-card {
+    background: #111111;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.project-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 22px;
+}
+
+.project-content header p {
+    color: #A0A0A0;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+}
+
+.project-content header h3 {
+    margin-bottom: 10px;
+}
+
+.project-content > p {
+    margin-bottom: 16px;
+}
+
+.project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.project-technologies li {
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.75rem;
+    color: #A0A0A0;
+}
+
+.project-links {
+    display: flex;
+    gap: 12px;
+}
+
+.project-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: #FFFFFF;
+    color: #0A0A0A;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.project-links a:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+/* ---------- Footer ---------- */
+#footer {
+    text-align: center;
+    padding: 30px 24px 40px;
+}
+
+#footer p {
+    font-size: 0.8rem;
+    color: #A0A0A0;
+}
+
+/* ==========================================================================
+   RESPONSIVE — MOBILE FIRST
+   Base styles di atas untuk mobile (< 600px).
+   Breakpoint di bawah memperluas layout untuk tablet & desktop.
+   ========================================================================== */
+
+/* Tablet (>= 600px) */
+@media (min-width: 600px) {
+    main {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .about .profile {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .profile-image {
+        flex-shrink: 0;
+    }
+
+    .personal-information,
+    .education-list,
+    .activity-list,
+    .skill-list,
+    .project-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop (>= 1024px) */
+@media (min-width: 1024px) {
+    #header {
+        padding: 18px 48px;
+    }
+
+    main {
+        padding-top: 100px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .skill-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        min-height: 85vh;
+    }
+}
+
+/* Small mobile refinement (< 400px) */
+@media (max-width: 400px) {
+    #header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    #header nav ul {
+        gap: 4px;
+    }
+
+    main {
+        padding-top: 130px;
+    }
+}
