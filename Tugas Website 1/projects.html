@@ -2,61 +2,26 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Projects | Agung Mantra</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
     <header id="header">
-
         <div class="logo">
-
-            <a href="home.html">
-                Agung Mantra
-            </a>
-
+            <a href="home.html">Agung Mantra</a>
         </div>
-
-
         <nav aria-label="Navigasi utama">
-
             <ul>
-
-                <li>
-                    <a href="home.html">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="profile.html">
-                        Tentang Saya
-                    </a>
-                </li>
-
-                <li>
-                    <a href="skills.html">
-                        Skill & Minat
-                    </a>
-                </li>
-
-                <li>
-                    <a href="projects.html">
-                        Project
-                    </a>
-                </li>
-
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Tentang Saya</a></li>
+                <li><a href="skills.html">Skill & Minat</a></li>
+                <li><a href="projects.html" class="active">Project</a></li>
             </ul>
-
         </nav>
-
     </header>
 
     <main>
@@ -64,114 +29,116 @@
         <section id="projects" class="projects">
 
             <header class="section-header">
-
-                <h1>
-                    Project
-                </h1>
-
+                <h1>Project</h1>
                 <p>
-                    Kumpulan project yang pernah saya kerjakan,
-                    baik secara individu maupun bersama tim.
+                    Kumpulan project yang pernah saya kerjakan, baik secara individu maupun bersama tim.
                 </p>
-
                 <p>
-                    Sebagian besar project saya berfokus pada
-                    UI/UX Design, terutama project yang dikembangkan
-                    untuk mengikuti berbagai lomba dan kompetisi.
+                    Sebagian besar project saya berfokus pada UI/UX Design, terutama project yang dikembangkan untuk mengikuti berbagai lomba dan kompetisi.
                 </p>
-
             </header>
 
             <section id="uiux-projects" class="project-category">
 
                 <header class="category-header">
-
-                    <h2>
-                        UI/UX Design
-                    </h2>
-
+                    <h2>UI/UX Design & Development</h2>
                     <p>
-                        Berbagai project desain antarmuka dan
-                        pengalaman pengguna yang saya kerjakan,
-                        termasuk project untuk kompetisi.
+                        Berbagai project desain antarmuka dan pengalaman pengguna yang saya kerjakan, termasuk project untuk kompetisi dan startup.
                     </p>
-
                 </header>
 
-
+                <!-- Menggunakan CSS Grid untuk tata letak Card Proyek -->
                 <div class="project-list">
 
+                    <!-- Proyek 1: Senandika -->
                     <article class="project-card">
-
-                        <figure class="project-image">
-
-                            <img src="asset/project1.png" alt="Preview UI/UX Project 1">
-
-                        </figure>
-
-
-                        <div class="project-content">
-
+                        <div>
+                            <figure class="project-image">
+                                <img src="asset/project1.png" alt="Preview UI/UX Project 1">
+                            </figure>
                             <header>
-
-                                <p>
-                                    UI/UX Design · Competition
-                                </p>
-
-                                <h3>
-                                    Senandika
-                                </h3>
-
+                                <p>UI/UX Design · Competition</p>
+                                <h3>Senandika</h3>
                             </header>
-
-
                             <p>
                                 Inovasi platform kesehatan mental yang dirancang inklusif khusus bagi penyandang tunarungu dan tunawicara.
                             </p>
-
                             <ul class="project-technologies">
-
-                                <li>
-                                    Figma
-                                </li>
-
-                                <li>
-                                    UI Design
-                                </li>
-
-                                <li>
-                                    UX Research
-                                </li>
-
-                                <li>
-                                    Prototyping
-                                </li>
-
+                                <li>Figma</li>
+                                <li>UI Design</li>
+                                <li>UX Research</li>
+                                <li>Prototyping</li>
                             </ul>
-
-
-                            <div class="project-links">
-
-                                <a href="https://www.figma.com/design/YxU7OrJew3KivIkD1aaZYq/Pingfest-project?m=auto&t=6ij2tiQvXs7OKPwO-6" target="_blank" rel="noopener noreferrer">
-                                    View Design
-                                </a>
-
-                            </div>
-
                         </div>
-
+                        <div class="project-links">
+                            <a href="https://www.figma.com/design/YxU7OrJew3KivIkD1aaZYq/Pingfest-project?m=auto&t=6ij2tiQvXs7OKPwO-6" target="_blank" rel="noopener noreferrer">
+                                View Design
+                            </a>
+                        </div>
                     </article>
+
+                    <!-- Proyek 2: StudyBud & PlanU -->
+                    <article class="project-card">
+                        <div>
+                            <header>
+                                <p>Mobile App Design · Architecture</p>
+                                <h3>StudyBud & PlanU</h3>
+                            </header>
+                            <p>
+                                Perancangan arsitektur informasi dan UI untuk aplikasi <strong>StudyBud</strong> (pencarian teman belajar) dan <strong>PlanU</strong> (edukasi kesehatan & keluarga berencana).
+                            </p>
+                            <ul class="project-technologies">
+                                <li>Figma</li>
+                                <li>Information Architecture</li>
+                                <li>User Flow</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Proyek 3: Yuaiyuex Studio -->
+                    <article class="project-card">
+                        <div>
+                            <header>
+                                <p>Startup · Branding & Strategy</p>
+                                <h3>Yuaiyuex Studio</h3>
+                            </header>
+                            <p>
+                                Perintisan startup IT penyedia layanan UI/UX Design, mencakup penentuan identitas brand, desain logo, dan strategi pemasaran media sosial.
+                            </p>
+                            <ul class="project-technologies">
+                                <li>Branding</li>
+                                <li>Logo Design</li>
+                                <li>Marketing</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Proyek 4: Platform Integrasi Blockchain & AI -->
+                    <article class="project-card">
+                        <div>
+                            <header>
+                                <p>System Concept · Competition</p>
+                                <h3>Decentralized Finance & AI</h3>
+                            </header>
+                            <p>
+                                Konsep aplikasi manajemen keuangan terdesentralisasi yang mengeksplorasi integrasi antara teknologi Blockchain dan Artificial Intelligence.
+                            </p>
+                            <ul class="project-technologies">
+                                <li>Concept Design</li>
+                                <li>Blockchain UI</li>
+                                <li>AI Integration</li>
+                            </ul>
+                        </div>
+                    </article>
+
                 </div>
             </section>
+        </section>
 
     </main>
 
     <footer id="footer">
-
-        <p>
-            &copy; 2026 Agung Mantra. All rights reserved.
-        </p>
-
+        <p>&copy; 2026 Agung Mantra. All rights reserved.</p>
     </footer>
 </body>
 

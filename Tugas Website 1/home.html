@@ -4,117 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="Website portofolio pribadi yang berisi informasi diri, skill, minat, pengalaman, dan project.">
-
+    <meta name="description" content="Website portofolio pribadi yang berisi informasi diri, skill, minat, pengalaman, dan project.">
     <title>Portfolio Agung Mantra</title>
-    <style src="style.css"></style>
+    <link rel="stylesheet" href="style.css">
 </head> 
 
 <body>
 
     <header id="header">
-
         <div class="logo">
-            <a href="home.html">
-                Agung Mantra
-            </a>
+            <a href="home.html">Agung Mantra</a>
         </div>
-
         <nav aria-label="Navigasi utama">
             <ul>
-                <li>
-                    <a href="home.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="profile.html">Tentang Saya</a>
-                </li>
-
-                <li>
-                    <a href="skills.html">Skill & Minat</a>
-                </li>
-
-                <li>
-                    <a href="projects.html">Project</a>
-                </li>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="profile.html">Tentang Saya</a></li>
+                <li><a href="skills.html">Skill & Minat</a></li>
+                <li><a href="projects.html">Project</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="home" class="hero">
-
             <div class="hero-content">
-
                 <p class="hero-subtitle">
                     Halo, saya I Gusti Ngurah Agung Mantra Suyasa. Selamat datang di portofolio saya!
                 </p>
-
                 <h1>
                     I Gusti Ngurah Agung Mantra Suyasa
                 </h1>
-
                 <p class="hero-description">
-                    Saya adalah seorang pengembang perangkat lunak dengan minat dalam menciptakan solusi teknologi yang
-                    inovatif dan efisien.
+                    Saya adalah seorang pengembang perangkat lunak dengan minat dalam menciptakan solusi teknologi yang inovatif dan efisien.
                 </p>
-
                 <div class="hero-actions">
-                    <a href="profile.html">
+                    <a href="profile.html" class="btn btn-primary">
                         Tentang Saya
                     </a>
-
-                    <a href="projects.html">
+                    <a href="projects.html" class="btn btn-secondary">
                         Lihat Project
                     </a>
                 </div>
-
             </div>
-
+            <div class="hero-graphic" aria-hidden="true">
+                <span class="ring ring-1"></span>
+                <span class="ring ring-2"></span>
+                <span class="ring-dot"></span>
+            </div>
         </section>
 
         <section id="contact" class="contact">
-
             <header class="section-header">
-
-                <h2>
-                    Mari Terhubung
-                </h2>
-
+                <h2>Mari Terhubung</h2>
             </header>
 
-            <div class="contact-information">
+            <div class="contact-grid">
+                <div class="contact-information">
+                    <p>Email: <a href="mailto:agung.mantra07@gmail.com">agung.mantra07@gmail.com</a></p>
+                    <p>GitHub: <a href="https://github.com/agungmantra" target="_blank" rel="noopener noreferrer">Profil GitHub</a></p>
+                </div>
 
-                <p>
-                    Email:
-                    <a href="mailto:agung.mantra07@gmail.com">
-                        agung.mantra07@gmail.com
-                    </a>
-                </p>
+                <!-- Formulir Kontak dengan Gaya Card -->
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="field">
+                            <label for="nama">Nama Lengkap:</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
 
-                <p>
-                    GitHub:
-                    <a href="https://github.com/agungmantra" target="_blank" rel="noopener noreferrer">
-                        Profil GitHub
-                    </a>
-                </p>
+                        <div class="field">
+                            <label for="email">Alamat Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
 
+                        <div class="field">
+                            <label for="telepon">No. Telepon / WhatsApp:</label>
+                            <input type="tel" id="telepon" name="telepon" placeholder="Contoh: 08123456789" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="alamat">Alamat Domisili:</label>
+                            <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat lengkap Anda" required></textarea>
+                        </div>
+
+                        <div class="field">
+                            <label for="pesan">Pesan:</label>
+                            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-primary">
+                                Kirim Pesan
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-
         </section>
-
     </main>
 
     <footer id="footer">
-
-        <p>
-            &copy; 2026 Agung Mantra. All rights reserved.
-        </p>
-
+        <p>&copy; 2026 Agung Mantra. All rights reserved.</p>
     </footer>
 
 </body>
-
 </html>
